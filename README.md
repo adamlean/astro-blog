@@ -1,96 +1,46 @@
-# 🛠 Project Starter Template
+# Astro Starter Kit: Basics
 
-A universal starter template that includes setups for **pure HTML/CSS**, **React**, and **WordPress**.  
-Use it to quickly spin up a new project without wasting time on initial configuration.
-
----
-
-## 📂 Project Structure
-
+```sh
+npm create astro@latest -- --template basics
 ```
 
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
 /
-├── html-css/ # Default HTML + CSS setup
-├── react/ # Clean React (Create React App)
-├── wordpress/ # Basic WP theme with pre-built blocks
-└── README.md # This file
-
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
 ```
 
----
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🔹 HTML/CSS
+## 🧞 Commands
 
-The `html-css` folder contains:
+All commands are run from the root of the project, from a terminal:
 
-- Basic HTML5 structure.
-- Included `reset.css`.
-- Simple grid and typography styles.
-- Example JavaScript connection.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-**Run:**
+## 👀 Want to learn more?
 
-Open `index.html` directly in your browser
-_or_ use a local dev server (e.g., VS Code Live Server).
-
----
-
-## 🔹 React
-
-The `react` folder contains a clean **Create React App** setup:
-
-- Standard `/src` and `/public` structure.
-- React 18.
-- ESLint with a base config.
-
-**Run:**
-
-```bash
-cd react
-npm install
-npm start
-```
-
----
-
-## 🔹 WordPress
-
-The `wordpress` folder is a minimal WordPress theme:
-
-- Prepared template files (`header.php`, `footer.php`, `index.php`, etc.).
-- Pre-built blocks for quick HTML-to-WP integration.
-- Styles and scripts already enqueued.
-- Template parts split into manageable chunks.
-
-**Setup:**
-
-1. Copy the `wordpress` folder to `/wp-content/themes/` in your WP installation.
-2. Activate the theme via **Appearance → Themes**.
-3. Start integrating your HTML/CSS into the ready-made blocks.
-
----
-
-## 🚀 How to Use
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/adamlean/web-template.git
-```
-
-2. Pick the folder for your project type.
-3. Run or integrate into your environment.
-
----
-
-## 📌 Notes
-
-- This is a lightweight starter kit, kept intentionally simple.
-- For large projects, extend the setup with linters, tests, and CI/CD.
-- The WordPress theme works with the latest WP versions.
-
----
-
-## 📄 License
-
-Free to use, modify, and share.
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
