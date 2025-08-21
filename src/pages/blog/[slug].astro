@@ -21,27 +21,29 @@ const { Content } = await post.render();
 <Layout>
   <Header />
   <article class="blog-post">
-    <img src={post.data.image} alt={post.data.title} class="post-image" />
+    <div class="container">
+      <img src={post.data.image} alt={post.data.title} class="post-image" />
 
-    <h1>{post.data.title}</h1>
-    <p class="post-meta">
-      {
-        post.data.pubDate.toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        })
-      } | {post.data.category}
-    </p>
+      <h1>{post.data.title}</h1>
+      <p class="post-meta">
+        {
+          post.data.pubDate.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+        } | {post.data.category}
+      </p>
 
-    <div class="post-tags">
-      {post.data.tags.map((tag) => <span class="post-tag">{tag}</span>)}
-    </div>
+      <div class="post-tags">
+        {post.data.tags.map((tag) => <span class="post-tag">{tag}</span>)}
+      </div>
 
-    <p class="description">{post.data.description}</p>
+      <p class="description">{post.data.description}</p>
 
-    <div class="post-body">
-      <Content />
+      <div class="post-body">
+        <Content />
+      </div>
     </div>
   </article>
   <Footer />
