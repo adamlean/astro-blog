@@ -1,3 +1,7 @@
+---
+import FooterCategories from "./FooterCategories.astro";
+---
+
 <footer class="footer">
   <div class="container footer-top">
     <div class="footer-about">
@@ -14,26 +18,16 @@
     <div class="footer-links">
       <h4>Quick Link</h4>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Archived</a></li>
-        <li><a href="#">Author</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/archived">Archived</a></li>
+        <li><a href="/author">Author</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
 
-    <div class="footer-categories">
-      <h4>Category</h4>
-      <ul>
-        <li><a href="#">Lifestyle</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Travel</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Economy</a></li>
-        <li><a href="#">Sports</a></li>
-      </ul>
-    </div>
+    <FooterCategories />
 
     <div class="footer-newsletter">
       <h4>Weekly Newsletter</h4>
@@ -53,9 +47,9 @@
         <p>© JS Template 2023. All Rights Reserved.</p>
       </div>
       <div class="footer-policies">
-        <a href="#">Terms of Use</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookie Policy</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/cookies">Cookie Policy</a>
       </div>
     </div>
   </div>
