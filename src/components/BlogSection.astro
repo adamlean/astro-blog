@@ -1,11 +1,12 @@
 ---
-import { getCollection } from "astro:content";
+import { type CollectionEntry } from "astro:content";
+type BlogPost = CollectionEntry<"blog">;
 
-let posts = await getCollection("blog");
+interface Props {
+  posts: BlogPost[];
+}
 
-posts = posts
-  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
-  .slice(0, 6);
+const { posts } = Astro.props as Props;
 ---
 
 <section class="latest-posts">
@@ -13,34 +14,17 @@ posts = posts
     <h2 class="section-title">Latest Posts</h2>
     <div class="posts-grid">
       {
-        posts.map((post) => (
+        posts.map(({ slug, data }) => (
           <article class="post-card">
-            <a href={`/blog/${post.slug}`} class="post-link">
-              <img
-                src={post.data.image}
-                alt={post.data.title}
-                class="post-image"
-              />
-
+            <a href={`/blog/${slug}`} class="post-link">
+              <img src={data.image} alt={data.title} class="post-image" />
               <div class="post-content">
-                <a
-                  href={`/category/${post.data.category}`}
-                  class="post-category"
-                >
-                  {post.data.category}
-                </a>
-
-                <h3 class="post-title">{post.data.title}</h3>
-                <p class="post-description">{post.data.description}</p>
-                <div class="post-meta">
-                  <span class="post-date">
-                    {post.data.pubDate.toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </span>
-                </div>
+                <span class="post-category">{data.category}</span>
+                <h3 class="post-title">{data.title}</h3>
+                <p class="post-description">{data.description}</p>
+                {data.pubDate && (
+                  <time class="post-date">{data.pubDate.toDateString()}</time>
+                )}
               </div>
             </a>
           </article>
@@ -109,6 +93,11 @@ posts = posts
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 12px;
+  }
+
+  .post-category {
+    text-decoration: none;
+    color: black;
   }
 
   .post-meta {
