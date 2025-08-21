@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metal Blog</title>
+    <meta name="description" content="description" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://example.com/" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="./assets/svg/Logo.svg" alt="MetaBlog Logo">
+      <!--<span>MetaBlog</span>-->
+    </div>
+
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Single Post</a>
+      <a href="#">Pages</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <button class="search-btn">
+        <!-- SVG иконка поиска -->
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-container">
+    <img src="./assets/img/hero.png" alt="Server Room" class="hero-image">
+
+    <!--<div class="hero-card">
+      <span class="hero-tag">Technology</span>
+      <h2 class="hero-title">
+        The Impact of Technology on the Workplace: How Technology is Changing
+      </h2>
+      <div class="hero-meta">
+        <img src="avatar.jpg" alt="Author" class="hero-avatar">
+        <span class="hero-author">Jason Francisco</span>
+        <span class="hero-date">August 20, 2022</span>
+      </div>
+    </div>-->
+  </div>
+</section>
+
+<section class="latest-posts">
+  <div class="container">
+    <h2 class="section-title">Latest Post</h2>
+    <div class="posts-grid">
+
+      <article class="post-card">
+        <img src="./assets/img/image-1.png" alt="Post Image" class="post-image">
+        <div class="post-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">
+            The Impact of Technology on the Workplace: How Technology is Changing
+          </h3>
+          <div class="post-meta">
+            <img src="./assets/img/avatar.png" alt="Author" class="post-avatar">
+            <span class="post-author">Tracey Wilson</span>
+            <span class="post-date">August 20, 2022</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="./assets/img/image-2.png" alt="Post Image" class="post-image">
+        <div class="post-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">
+            The Impact of Technology on the Workplace: How Technology is Changing
+          </h3>
+          <div class="post-meta">
+            <img src="./assets/img/avatar.png" alt="Author" class="post-avatar">
+            <span class="post-author">Tracey Wilson</span>
+            <span class="post-date">August 20, 2022</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="./assets/img/image-3.png" alt="Post Image" class="post-image">
+        <div class="post-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">
+            The Impact of Technology on the Workplace: How Technology is Changing
+          </h3>
+          <div class="post-meta">
+            <img src="./assets/img/avatar.png" alt="Author" class="post-avatar">
+            <span class="post-author">Tracey Wilson</span>
+            <span class="post-date">August 20, 2022</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="./assets/img/image-4.png" alt="Post Image" class="post-image">
+        <div class="post-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">
+            The Impact of Technology on the Workplace: How Technology is Changing
+          </h3>
+          <div class="post-meta">
+            <img src="./assets/img/avatar.png" alt="Author" class="post-avatar">
+            <span class="post-author">Tracey Wilson</span>
+            <span class="post-date">August 20, 2022</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="./assets/img/image-5.png" alt="Post Image" class="post-image">
+        <div class="post-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">
+            The Impact of Technology on the Workplace: How Technology is Changing
+          </h3>
+          <div class="post-meta">
+            <img src="./assets/img/avatar.png" alt="Author" class="post-avatar">
+            <span class="post-author">Tracey Wilson</span>
+            <span class="post-date">August 20, 2022</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Дублируем остальные карточки -->
+      <article class="post-card">
+        <img src="./assets/img/image-6.png" alt="Post Image" class="post-image">
+        <div class="post-content">
+          <span class="post-tag">Technology</span>
+          <h3 class="post-title">
+            The Impact of Technology on the Workplace: How Technology is Changing
+          </h3>
+          <div class="post-meta">
+            <img src="./assets/img/avatar.png" alt="Author" class="post-avatar">
+            <span class="post-author">Jason Francisco</span>
+            <span class="post-date">August 20, 2022</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- И так далее -->
+    </div>
+  </div>
+</section>
+
+    </main>
+   <footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-about">
+      <h4>About</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
+      <p><strong>Email:</strong> info@jstemplate.net</p>
+      <p><strong>Phone:</strong> 880 123 456 789</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Link</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Archived</a></li>
+        <li><a href="#">Author</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-categories">
+      <h4>Category</h4>
+      <ul>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Economy</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Weekly Newsletter</h4>
+      <p>Get blog articles and offers via email</p>
+      <form>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <div class="footer-logo">
+        <img src="./assets/svg/Logo.svg" alt="MetaBlog" height="20">
+        <span>MetaBlog</span>
+        <p>© JS Template 2023. All Rights Reserved.</p>
+      </div>
+      <div class="footer-policies">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
