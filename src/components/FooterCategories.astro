@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
 
-// Получаем уникальные категории
+// collect unique categories
 const categories = [...new Set(posts.map((p) => p.data.category))];
 ---
 
